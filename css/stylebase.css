@@ -22,7 +22,7 @@ html {
     overflow-x: auto;
 }
 #logmooff{
-    background: url('/mooff/images/logo6.png') no-repeat; 
+    background: url('/mooff/images/logo5.png') no-repeat; 
     width: 200px;
     height: 55px;
     margin-top: 0px;
@@ -1475,13 +1475,4 @@ footer .textbottom {
 }
 footer .emailbottom {
     font-size: 0.8em;
-}
-.espacio-hidden{
-    float: left;
-    clear: both;
-    margin: 49px 0px 0px 81px !important;
-}
-.part-leftvideo{
-    width: 174px;
-    float: left;
 }
