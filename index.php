@@ -71,7 +71,7 @@
         <div id="body" <?= $page_class ?>>
             <div class="inner">
               
-                     <?php include_once('sites/'.$page_site.'.php'); ?>
+                     <?php //include_once('sites/'.$page_site.'.php'); ?>
             </div> 
         </div>
         
