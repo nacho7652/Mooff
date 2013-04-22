@@ -1,5 +1,6 @@
 <?php 
     require_once 'function/place.php';
+    require_once 'DAL/connect.php';
     ?>
 <!DOCTYPE html>
 <html>
@@ -71,7 +72,7 @@
         <div id="body" <?= $page_class ?>>
             <div class="inner">
               
-                     <?php //include_once('sites/'.$page_site.'.php'); ?>
+                     <?php $conecta=connect::conectarse(); if($conecta!=NULL)echo "conecto"; //include_once('sites/'.$page_site.'.php'); ?>
             </div> 
         </div>
         
