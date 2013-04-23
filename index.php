@@ -1,6 +1,7 @@
 <?php 
     require_once 'function/place.php';
     require_once 'DAL/connect.php';
+    require_once 'function/noticia-response.php';
     ?>
 <!DOCTYPE html>
 <html>
@@ -15,6 +16,7 @@
         <meta name="description" content="<?= $page_description ?>">
         <link rel="stylesheet" href="css/stylebase.css">
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <meta charset="utf-8">
        
     </head>
@@ -72,7 +74,7 @@
         <div id="body" <?= $page_class ?>>
             <div class="inner">
               
-                     <?php $conecta=connect::conectarse(); if($conecta!=NULL)echo "conecto"; //include_once('sites/'.$page_site.'.php'); ?>
+                     <?php include_once('sites/'.$page_site.'.php'); ?>
             </div> 
         </div>
         

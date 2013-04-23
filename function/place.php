@@ -2,7 +2,7 @@
   $place = empty($_GET['place']) ? 'home' : $_GET['place'];
   
   switch ($place){
-      case 'admin': $page_title = 'Liceo San Francisco - Admin';
+      case 'admin2': $page_title = 'Liceo San Francisco - Admin';
                    $page_site = 'login-admin';
                    $page_class = 'login-admin';
                    $page_description = "";
@@ -50,9 +50,9 @@
                    $page_class = 'academica';
                    $page_description = "";
                    break;
-      case 'administradorsuper':
-                   $page_title = 'Liceo San Francisco';
-                   $page_site = 'administradors';
+      case 'admin':
+                   $page_title = 'Administracion MOOFF';
+                   $page_site = 'admin';
                    $page_class = 'administrador';
                    $page_description = "";
                    break;
