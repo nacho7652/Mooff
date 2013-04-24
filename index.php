@@ -124,7 +124,7 @@
          <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
          <script type="text/javascript" src="js/script.js"></script>
          <script type="text/javascript" src="js/jquery.cycle.all.latest.js"></script>
-          <script type="text/javascript">
+<!--          <script type="text/javascript">
             $(document).ready(function() {
                 /*SLIDE-BANNER*/
                 $('.slideshow-first').fadeTo(5000, 0, function(){
@@ -138,7 +138,7 @@
         /******/
         
                 
-        </script>
+        </script>-->
         <script type="text/javascript" src="highslide/highslide-with-gallery.js"></script>
         <script type="text/javascript" src="highslide/highslide.config.js" charset="utf-8"></script>
         <link rel="stylesheet" type="text/css" href="highslide/highslide.css" />

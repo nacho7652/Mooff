@@ -1,25 +1,28 @@
 $(document).ready(function(){   
       $('#insert_news').click(function(){
           var titulo=$('#title').val();
-          var cuerpo=$('#body_news').val();
+          //var cuerpo=$('#body_news').val();
           //var imagen=$('#img').val();
          $.ajax({
               type: "POST",
-              dataType: "json",
+              dataType: "html",
               url: "/mooff/function/noticia-response.php",
-              data: "insertNew=1&titulo="+titulo+"&cuerpo="+cuerpo,
+              data: "insertNew=1&titulo="+titulo,
+              beforeSend: function(){
+                $("#insert_news").val('Enviando....');
+              },
               success : function (data)
-              {  
-                  alert("Noticia Ingresada");
-                   if(data.re==1)
-                       {
-                          alert("Noticia Ingresada");
-                       }
-                       else
-                       {
-                          alert("Noticia no Ingresada");
-                       }                               
-              }              
+              { 
+                  $("#insert_news").val('Enviado');
+                  $('#error').append(data);
+              }, 
+              error : function(xhr, ajaxOptions, thrownError)
+              {
+                 $("#insert_news").val('Intente nuevamente'); 
+                 alert(xhr.status);
+                 alert(thrownError);
+                 alert(ajaxOptions);
+              }
          })
     });
 })

@@ -6,6 +6,8 @@
     <input type="file" id="img"/>
     <input type="button" id="insert_news" value="Guardar"/>
 </div>
+<div id="error">
+</div>
 <?php
 
 ?>
