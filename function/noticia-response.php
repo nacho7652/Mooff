@@ -6,7 +6,7 @@
             $noticia = new noticiaDAL();
             $resultado=$noticia->ingresarNoticia($_POST['titulo'],'noticia','imagen');
             return $resultado;
-            $arr = array("re"=>$resultado);
-            return json_encode($arr);
+//            $arr = array("re"=>$resultado);
+//            return json_encode($arr);
         }
 ?>
