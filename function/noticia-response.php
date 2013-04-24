@@ -1,5 +1,5 @@
 <?php
-    require_once 'DAL/noticiaDAL.php';
+    require_once '../DAL/noticiaDAL.php';
     
          if(isset($_POST['insertNew'])){
              sleep(10);
