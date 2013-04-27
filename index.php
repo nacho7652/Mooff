@@ -1,7 +1,8 @@
 <?php 
     require_once 'function/place.php';
     require_once 'DAL/connect.php';
-    require_once 'function/noticia-response.php';
+    require_once 'DAL/noticiaDAL.php';
+    date_default_timezone_set("Chile/Continental");
     ?>
 <!DOCTYPE html>
 <html>
