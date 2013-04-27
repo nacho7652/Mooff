@@ -5,7 +5,7 @@
     class noticiaDAL{
         public function ingresarNoticia($titulo,$cuerpo,$imagen,$id)
         {
-            $fecha = date('Y-m-d h:i:s');
+            $fecha = date('Y-m-d H:i:s');
             $query = "insert into noticias values ('$id','$titulo','$cuerpo','$imagen','$fecha')";
             $connect = new connect();
             $connect->conectarse();
@@ -28,19 +28,21 @@
         
         public function verNoticiasHome()
         {
-            $noticias = array(); 
-            $noticia = new noticia();
+            $noticias = new ArrayObject();
+            
             $connect = new connect();
             $connect->conectarse();
             $result = mysql_query("select * from noticias order by(fecha_noticia)DESC limit 10");
             while($rs = mysql_fetch_array($result))
             {
+                $noticia = new noticia();
                 $noticia->setTitulo($rs[1]);
                 $noticia->setCuerpo($rs[2]);
                 $noticia->setImagen($rs[3]);
                 $noticia->setFecha($rs[4]);
                 
-                $noticias[] = $noticia;
+                $noticias->append($noticia);
+                
             }
             return $noticias;
             

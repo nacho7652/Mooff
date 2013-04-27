@@ -35,7 +35,7 @@ if(isset($_POST["enviar"]))
 
 <?php
     $noticias = $noticia->verNoticiasHome();
-//    foreach ($noticias as $key) {
-//        echo $key->getTitulo().'</br>'; 
-//    }
+    foreach ($noticias as $key) {
+        echo $key->getTitulo().'</br>'; 
+    }
 ?>
