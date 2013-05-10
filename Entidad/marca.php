@@ -36,9 +36,10 @@ class marca {
          $this->imagen = $imagen;
      }
      
-     function marca($n,$i)
+     function marca($id,$n,$i)
      {
-         $this->titulo = $n;
+         $this->id= $id;
+         $this->nombre = $n;
          $this->imagen = $i;
      }
 }

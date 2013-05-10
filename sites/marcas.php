@@ -23,7 +23,7 @@ if(isset($_POST["send"]))
 }
 ?>
 
-<form id="marcas" action="marcas" method="post" enctype="multipart/form-data">
+<form id="marcas" action="#" method="post" enctype="multipart/form-data">
     <input type="number" name="id" id="id" placeholder="Max id <?php echo $marca->maxID() ?>"/></br>
     <input type="text" name="nom" id="nom" placeholder="Nombre"/></br>
     <input type="file" name="img" id="img"/>
