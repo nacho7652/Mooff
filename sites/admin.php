@@ -1,5 +1,4 @@
 
-
 <?php
 $noticia = new noticiaDAL();
 if(isset($_POST["enviar"]))

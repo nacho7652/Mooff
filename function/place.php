@@ -44,10 +44,10 @@
                    $page_class = 'gallery';
                    $page_description = "";
                    break;
-     case 'area-academica':
-                   $page_title = 'Liceo San Francisco';
-                   $page_site = 'academica';
-                   $page_class = 'academica';
+     case 'marcas':
+                   $page_title = 'Administracion MOOFF';
+                   $page_site = 'marcas';
+                   $page_class = 'administrador';
                    $page_description = "";
                    break;
       case 'admin':

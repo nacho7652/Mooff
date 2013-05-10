@@ -2,6 +2,7 @@
     require_once 'function/place.php';
     require_once 'DAL/connect.php';
     require_once 'DAL/noticiaDAL.php';
+    require_once 'DAL/marcaDAL.php';
     date_default_timezone_set("Chile/Continental");
     ?>
 <!DOCTYPE html>

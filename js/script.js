@@ -26,6 +26,34 @@ $(document).ready(function(){
         }
         
     });
+    
+    $('#send').click(function(event){
+        var nombre = $('#nom').val();
+        var id = $('#id').val();
+        var imagen = $('#img').val();
+        if(nombre == '')
+        {
+            event.preventDefault();
+            alert('Ingrese el nombre de la marca');
+            $('#nom').focus();
+            return;
+        }
+        if(id == '')
+        {
+            event.preventDefault();
+            alert('Ingrese id de la marca');
+            $('#id').focus();
+            return;
+        }
+        if(imagen == '')
+        {
+            event.preventDefault();
+            alert('Seleccione una imagen');
+            $('#img').focus();
+            return;
+        }
+        
+    });
 //      $('#insert_news').click(function(){
 //          var titulo=$('#title').val();
 //          //var cuerpo=$('#body_news').val();

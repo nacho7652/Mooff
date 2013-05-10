@@ -1,22 +1,22 @@
 <?php
     require_once 'connect.php';
-    require_once 'Entidad/noticia.php';
+    require_once 'Entidad/marca.php';
 
-    class noticiaDAL{
-        public function ingresarNoticia($titulo,$cuerpo,$imagen,$id)
+class marcaDAL {
+    
+        public function ingresarMarca($nombre,$imagen,$id)
         {
-            $fecha = date('Y-m-d H:i:s');
-            $query = "insert into noticias values ('$id','$titulo','$cuerpo','$imagen','$fecha')";
+            $query = "insert into marcas values ('$id','$nombre','$imagen')";
             $connect = new connect();
             $connect->conectarse();
             $consulta = mysql_query($query);
             $connect->desconectarse();
             return $consulta;
         }
-
+        
         public function maxID()
         {
-            $consulta = "select max(id_noticias) from noticias" ;
+            $consulta = "select max(id_marcas) from marcas" ;
             $connect = new connect();
             $connect->conectarse();
             $result = mysql_query($consulta);
@@ -26,27 +26,26 @@
             return $id;
         }
         
-        public function verNoticiasHome()
+        public function verMarcas()
         {
-            $noticias = new ArrayObject();
-            
+            $marcas = new ArrayObject();
             $connect = new connect();
             $connect->conectarse();
-            $result = mysql_query("select * from noticias order by(fecha_noticia)DESC limit 10");
+            $result = mysql_query("select * from marcas");
             $connect->desconectarse();
             while($rs = mysql_fetch_array($result))
             {
-                $noticia = new noticia();
-                $noticia->setTitulo($rs[1]);
-                $noticia->setCuerpo($rs[2]);
-                $noticia->setImagen($rs[3]);
-                $noticia->setFecha($rs[4]);
+                $marca = new marca();
+                $marca->setId($rs[0]);
+                $marca->setNombre($rs[1]);
+                $marca->setImagen($rs[2]);
                 
-                $noticias->append($noticia);
+                $marcas->append($marca);
                 
             }
-            return $noticias;
+            return $marcas;
             
         }
-    }
+}
+
 ?>
