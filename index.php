@@ -74,7 +74,7 @@
                 <a href="/hojalateria/contacto" class="link">Ubicación y contacto</a>
             </div>
         </div>
-        <div id="body" class=<?php $page_class ?>>
+        <div id="body" <?=$page_class ?>>
             <div class="inner">
               
                      <?php include_once('sites/'.$page_site.'.php'); ?>
