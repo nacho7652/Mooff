@@ -1,8 +1,8 @@
 $(document).ready(function(){  
     //diego 
        $('#login-fb').mouseover(function(){
-           $(this).css('background','url(/mooff/images/login-face-sprite.png) -68px -24px no-repeat');
-           $('#loginbtn-fb').css('background','url(/mooff/images/loginbtn-face-sprite.png) -68px -24px no-repeat')
+           $(this).css('background','url(/mooff/images/login-face-sprite.png) -82px -24px no-repeat');
+           $('#loginbtn-fb').css('background','url(/mooff/images/loginbtn-face-sprite.png) -0px -24px no-repeat')
        })
        $('#login-fb').mouseleave(function(){
            $(this).css('background','url(/mooff/images/login-face-sprite.png) top right no-repeat');

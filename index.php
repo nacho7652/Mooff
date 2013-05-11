@@ -15,10 +15,10 @@
         <link rel="shortcut icon" href="images/favicon.png">
         <link rel="apple-touch-icon" href="images/favicon.png">
         <title><?= $page_title ?></title>
-        <meta name="description" content="<?= $page_description ?>">
-        <link rel="stylesheet" href="/mooff/css/stylebase.css">
-        <link rel="stylesheet" href="/mooff/css/style.css">
-        <link rel="stylesheet" href="/mooff/css/style-own.css">
+        <!--<meta name="description" content="">-->
+        <link rel="stylesheet" href="css/stylebase.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-own.css">
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <meta charset="utf-8">
        
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div id="top">
-<!--            <div class="inner-top">
+            <div class="inner-top">
                 <div id="logmooff"></div>
                 <div class="part-right-top">
                     <a id="login-fb" href="#">
@@ -47,7 +47,7 @@
                         <div class="txtfb">Ingresar con Facebook</div>
                     </a>
                 </div>
-            </div>-->
+            </div>
         </div>
         <div id="menu">
             
