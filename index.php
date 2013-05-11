@@ -47,19 +47,22 @@
                         <div class="txtfb">Ingresar con Facebook</div>
                     </a>
                 </div>
-            </div>
-        </div>
-        <div id="menu">
+                
+                <div id="menu">
             
-            <div class="part1">
-                <a href="/hojalateria/home" class="link firstlink">
-                    <p class="inicio">Inicio</p>
-                </a>
-                <a href="/hojalateria/quienes" class="link">Quienes Somos</a>
-                <a href="/hojalateria/servicios" class="link">Servicios</a>
-                <a href="/hojalateria/contacto" class="link">Ubicación y contacto</a>
+                    <div class="part1 specialfont2">
+                        <a href="/hojalateria/home" class="link firstlink">
+                            <p class="inicio">Inicio</p>
+                        </a>
+                        <a href="/hojalateria/quienes" class="link"><p>Quienes Somos</p></a>
+                        <a href="/hojalateria/servicios" class="link"><p>Servicios</p></a>
+                        <a href="/hojalateria/contacto" class="link"><p>Ubicación y contacto</p></a>
+                    </div>
+                </div>
             </div>
+            
         </div>
+        
         <div id="body" <?=$page_class ?>>
             <div class="inner">
               
@@ -74,14 +77,7 @@
                         Contáctanos
                     </div>
                     <div class="info-cont">
-                        <?php 
-                        
-                        echo nl2br('Juan Esteban Veloso Palacios
-
-                        Los Alerces 112 - Renca
-                        ​
-                        Celular 8 74 68 888');
-                        ?>
+                       
                     </div>
                 </div>
                 <div class="bottom-rg">
@@ -89,22 +85,10 @@
                         Servicios
                     </div>
                     <div class="info-cont">
-                        <?php 
-                        
-                        echo nl2br('Todos los espesores
-​
-                                    Fabricación de bajadas de aguas lluvias todas las medidas
-                                    ﻿
-                                    Venta de techos');
-                        ?>
+                       
                     </div>
                     <div class="redes-bott">
-                        <a href="#">
-                            <img src="images/facebook.00_wix_mp_srz"/>
-                        </a>
-                        <a href="#">
-                            <img src="images/twitter.00_wix_mp_srz"/>
-                        </a>
+                       
                     </div>
                 </div>
                 

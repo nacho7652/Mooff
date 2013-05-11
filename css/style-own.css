@@ -1,3 +1,17 @@
+@font-face{
+    font-family: "EstoyBueno";
+    src: url('/mooff/fonts/EstoyBueno.ttf'),
+         url('../fonts/Impact.eot'),
+         url('../fonts/Impact.otf'),
+         url('../fonts/Impact.woff') ;
+}
+.specialfont2{
+    font-family: "EstoyBueno" !important;
+}
+
+body{
+    background: url(/mooff/images/overtop.png) rgba(255, 255, 255, 0);
+}
 #logmooff{
     background: url('/mooff/images/logo5.png') no-repeat; 
     width: 200px;
@@ -6,19 +20,32 @@
     background-size: 164px;
     left: 73px;
     position: absolute;
-    top: 8px;
+    top: 0px;
 }
 .item-noticia {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     color: #fff;
     float: left;
-    margin: 0px 37px 7px 0px;
-    box-shadow: 0px 35px 99px -19px #000 inset;
+    margin: 0px 19px 19px 0px;
+    box-shadow: 0px 118px 71px -19px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0px 210px 71px -19px rgba(0, 0, 0, 0.4) inset;
+    position: relative;
 }
 .titulo-noticia{
     margin: 3px 0px 0px 7px;  
-    text-shadow: 0px 1px 2px #000;
+    text-shadow: 0 1px 1px rgb(0, 0, 0);  
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+.content-noticia {
+    float: left;
+    width: 165px;
+    margin: 58px 0px 0px 4px;
+    font-size: 0.8em;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.55);
+    position: absolute;
+    bottom: 0px;
 }
 #login-fb{
     background: url(/mooff/images/login-face-sprite.png) top right no-repeat;
