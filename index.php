@@ -16,9 +16,9 @@
         <link rel="apple-touch-icon" href="images/favicon.png">
         <title><?= $page_title ?></title>
         <meta name="description" content="<?= $page_description ?>">
-        <link rel="stylesheet" href="css/stylebase.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style-own.css">
+        <link rel="stylesheet" href="/mooff/css/stylebase.css">
+        <link rel="stylesheet" href="/mooff/css/style.css">
+        <link rel="stylesheet" href="/mooff/css/style-own.css">
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <meta charset="utf-8">
        
@@ -39,29 +39,15 @@
             </div>
         </div>
         <div id="top">
-            <div id="logmooff"></div>
-             
-<!--            <div class="slideshow">
-                <img src="images/banner/b1.png" class="trans"/>
-                <img src="images/banner/b2.png" class="trans"/>
-                <img src="images/banner/b3.png" class="trans"/>
-                <img src="images/banner/b4.png" class="trans"/>
-                <img src="images/banner/b5.png" class="trans"/>
-                <img src="images/banner/b6.png" class="trans"/>
-            </div>
-            <div class="slideshow-first">
-                
-            </div>
-            <div class="encabezado">
-                <img class="logotop" src="images/logo_lsf.png"/>
-                <p class="nombreliceo">LICEO SAN FRANCISCO</p>
-                <p class="eslogan">Desde 1879 entregando una educación de
-                excelencia basada en la pedagogía de Jesús.</p>
+<!--            <div class="inner-top">
+                <div id="logmooff"></div>
+                <div class="part-right-top">
+                    <a id="login-fb" href="#">
+                        <div id="loginbtn-fb"></div>
+                        <div class="txtfb">Ingresar con Facebook</div>
+                    </a>
+                </div>
             </div>-->
-<!--            <div class="rotator">
-                <img class="banner1" src="images/foto1.png"/>
-            </div>-->
-           
         </div>
         <div id="menu">
             
