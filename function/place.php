@@ -2,44 +2,44 @@
   $place = empty($_GET['place']) ? 'home' : $_GET['place'];
   
   switch ($place){
-      case 'admin2': $page_title = 'Liceo San Francisco - Admin';
+      case 'admin2': $page_title = 'Mooff - Admin';
                    $page_site = 'login-admin';
                    $page_class = 'login-admin';
                    $page_description = "";
                    break;
-      case 'quienes': $page_title = 'Liceo San Francisco';
+      case 'quienes': $page_title = 'Mooff';
                    $page_site = 'quienes';
                    $page_class = 'home';
                    $page_description = "";
                    break;
-      case 'servicios': $page_title = 'Liceo San Francisco';
+      case 'servicios': $page_title = 'Mooff';
                    $page_site = 'servicios';
                    $page_class = '';
                    $page_description = "";
                    break;
-      case 'contacto': $page_title = 'Liceo San Francisco';
+      case 'contacto': $page_title = 'Mooff';
                    $page_site = 'contacto';
                    $page_class = 'home';
                    $page_description = "";
                    break;
-      case 'circulares': $page_title = 'Liceo San Francisco';
+      case 'circulares': $page_title = 'Mooff';
                    $page_site = 'circulares';
                    $page_class = 'gallery';
                    $page_description = "";
                    break;
-      case 'home': $page_title = 'Liceo San Francisco';
+      case 'home': $page_title = 'Mooff';
                    $page_site = 'home';
                    $page_class = 'home';
                    $page_description = "";
                    break;
      case 'videos':
-                   $page_title = 'Liceo San Francisco';
+                   $page_title = 'Mooff';
                    $page_site = 'videos';
                    $page_class = 'gallery';
                    $page_description = "";
                    break;
     case 'gallery':
-                   $page_title = 'Liceo San Francisco';
+                   $page_title = 'Mooff';
                    $page_site = 'gallery';
                    $page_class = 'gallery';
                    $page_description = "";

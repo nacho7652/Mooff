@@ -14,7 +14,7 @@ if(isset($_POST["enviar"]))
         $url = 'noticias/'.$nom;
         move_uploaded_file($tmp_name,$url);
         chmod($url, 777);
-        $noticia->ingresarNoticia($_POST['title'], $_POST['body_new'],$url,$_POST['id']);   
+        echo $noticia->ingresarNoticia($_POST['title'], $_POST['body_new'],$url,$_POST['id']);   
     }
     else
     {
