@@ -555,7 +555,7 @@ RewriteRule (.*)highslide/(.*)$ highslide/$2 [L]
 
   RewriteRule (.*)antiguo/(.*)$ antiguo/$2 [L]
 
-  RewriteRule ^([a-z0-9_-]+)/?$ /Mooff/index.php?place=$1 [NC,L]
+  RewriteRule ^([a-z0-9_-]+)/?$ /mooff/index.php?place=$1 [NC,L]
 
 
 
