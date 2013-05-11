@@ -18,6 +18,7 @@
         <meta name="description" content="<?= $page_description ?>">
         <link rel="stylesheet" href="css/stylebase.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-own.css">
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <meta charset="utf-8">
        
@@ -145,15 +146,7 @@
         <script type="text/javascript" src="highslide/highslide.config.js" charset="utf-8"></script>
         <link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
          <script type="text/javascript" src="js/scroll.js" charset="utf-8"></script>
-         <script type="text/javascript" src="js/upload-galerias.js" charset="utf-8"></script>
-         <script type="text/javascript" src="js/upload.js" charset="utf-8"></script>
-         <script type="text/javascript" src="js/upload-quienes.js" charset="utf-8"></script>
-          <script type="text/javascript" src="js/upload-trabajador.js" charset="utf-8"></script>
-          <script type="text/javascript" src="js/upload-convivencia.js" charset="utf-8"></script>
-          <script type="text/javascript" src="js/upload-talleres.js" charset="utf-8"></script>
-          <script type="text/javascript" src="js/upload-circulares.js" charset="utf-8"></script>
-          <script type="text/javascript" src="js/upload-material.js" charset="utf-8"></script>
-           <script type="text/javascript" src="js/upload-videos.js" charset="utf-8"></script>
+
         <!--[if lt IE 7]>
         <link rel="stylesheet" type="text/css" href="highslide/highslide-ie6.css" />
         <![endif]-->
