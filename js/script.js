@@ -8,6 +8,10 @@ $(document).ready(function(){
            $(this).css('background','url(/mooff/images/login-face-sprite.png) top right no-repeat');
            $('#loginbtn-fb').css('background','url(/mooff/images/loginbtn-face-sprite.png) top right no-repeat')
        })
+       
+       $('.flecha-op').click(function(){
+           $('.divoption').toggle();
+       })
     //diego
     $('#enviar').click(function(event){
         var titulo = $('#title').val();

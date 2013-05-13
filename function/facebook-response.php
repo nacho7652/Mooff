@@ -1,6 +1,6 @@
 <?php
-session_start();
 require 'facebook.php';
+
 
     // Create our Application instance (replace this with your appId and secret).
     $facebook = new Facebook(array(
@@ -22,15 +22,16 @@ require 'facebook.php';
     }
 
     // Login or logout url will be needed depending on current user state.
-            $params = array(
-                    'scope' => "email,user_birthday,user_location,publish_stream,offline_access",
-                    'redirect_uri' => 'http://localhost/mooff/'
-            );
-      $loginUrl = $facebook->getLoginUrl($params);
-     
-       $_SESSION['user'] = $user_profile;
-       header('location:'.$loginUrl);
+    $params = array(
+            'scope' => "email,user_birthday,user_location,publish_stream,offline_access",
+            'redirect_uri' => 'http://localhost/mooff/'
+    );
+    $loginUrl = $facebook->getLoginUrl($params);
     
-    //fin face
-    
+if(isset($_GET['logout'])){
+        session_destroy();
+        $user = null;
+        header("location:/mooff/home");
+    }
+
 ?>

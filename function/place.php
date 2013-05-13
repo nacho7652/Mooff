@@ -2,6 +2,12 @@
   $place = empty($_GET['place']) ? 'home' : $_GET['place'];
   
   switch ($place){
+       case 'marca':
+                   $page_title = 'Administracion MOOFF';
+                   $page_site = 'marcas';
+                   $page_class = 'administrador';
+                   $page_description = "";
+                   break;
       case 'admin2': $page_title = 'Mooff - Admin';
                    $page_site = 'login-admin';
                    $page_class = 'login-admin';
@@ -42,12 +48,6 @@
                    $page_title = 'Mooff';
                    $page_site = 'gallery';
                    $page_class = 'gallery';
-                   $page_description = "";
-                   break;
-     case 'marcas':
-                   $page_title = 'Administracion MOOFF';
-                   $page_site = 'marcas';
-                   $page_class = 'administrador';
                    $page_description = "";
                    break;
       case 'admin':

@@ -46,16 +46,27 @@
             <div class="inner-top">
                 <div id="logmooff"></div>
                 <div class="part-right-top">
-                    <?php if(!isset($_SESSION['user'])){?>
-                        <a id="login-fb" href="<?php echo '/mooff/function/facebook-response.php'; ?>">
+                    <?php 
+                    include_once ('function/facebook-response.php');
+                    if(isset($user_profile) != null){//apreté el boton y se creo mi usuario
+                        $_SESSION['user'] = $user_profile;
+                    }
+                    
+                    if(!isset($_SESSION['user'])){?>
+                        <a id="login-fb" href="<?php echo $loginUrl; ?>">
                             <div id="loginbtn-fb"></div>
                             <div class="txtfb">Ingresar con Facebook</div>
                         </a>
                     <?php }else{?>
-                        <div id="login-fb">
-                            <div id="loginbtn-fb"></div>
-                            <div class="txtfb"><?php echo $_SESSION['user']['email']; ?></div>
-                            <a href="/mooff/function/logout.php">Logout</a>
+                        <div id="partuser">
+                            <div class="flecha-op"></div>
+                            <div style="background-image: url('https://graph.facebook.com/<?= $user?>/picture');
+                                    background-size: cover; background-repeat: no-repeat"
+                                 id="fotouser"></div>
+                            <div class="emailuser specialfont2"><?php echo $_SESSION['user']['username']; ?></div>
+                            <div class="divoption">
+                                <a id="logout" href="/mooff/function/facebook-response.php?logout=1">Logout</a>
+                            </div>
                         </div>
                     <?php } ?>
                 </div>
@@ -63,12 +74,12 @@
                 <div id="menu">
             
                     <div class="part1 specialfont2">
-                        <a href="/hojalateria/home" class="link firstlink">
+                        <a href="/mooff/home" class="link firstlink">
                             <p class="inicio">Inicio</p>
                         </a>
-                        <a href="/hojalateria/quienes" class="link"><p>Quienes Somos</p></a>
-                        <a href="/hojalateria/servicios" class="link"><p>Servicios</p></a>
-                        <a href="/hojalateria/contacto" class="link"><p>Ubicación y contacto</p></a>
+                        <a href="/mooff/quienes" class="link"><p>Quienes Somos</p></a>
+                        <a href="/mooff/servicios" class="link"><p>Servicios</p></a>
+                        <a href="/mooff/contacto" class="link"><p>Ubicación y contacto</p></a>
                     </div>
                 </div>
             </div>
