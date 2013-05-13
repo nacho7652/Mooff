@@ -1,10 +1,14 @@
 <?php 
+    session_start();
     require_once 'function/place.php';
     require_once 'DAL/connect.php';
     require_once 'DAL/noticiaDAL.php';
     require_once 'DAL/marcaDAL.php';
     date_default_timezone_set("Chile/Continental");
-    ?>
+    //face
+        
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -42,10 +46,18 @@
             <div class="inner-top">
                 <div id="logmooff"></div>
                 <div class="part-right-top">
-                    <a id="login-fb" href="#">
-                        <div id="loginbtn-fb"></div>
-                        <div class="txtfb">Ingresar con Facebook</div>
-                    </a>
+                    <?php if(!isset($_SESSION['user'])){?>
+                        <a id="login-fb" href="<?php echo '/mooff/function/facebook-response.php'; ?>">
+                            <div id="loginbtn-fb"></div>
+                            <div class="txtfb">Ingresar con Facebook</div>
+                        </a>
+                    <?php }else{?>
+                        <div id="login-fb">
+                            <div id="loginbtn-fb"></div>
+                            <div class="txtfb"><?php echo $_SESSION['user']['email']; ?></div>
+                            <a href="/mooff/function/logout.php">Logout</a>
+                        </div>
+                    <?php } ?>
                 </div>
                 
                 <div id="menu">
