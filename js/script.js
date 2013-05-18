@@ -12,6 +12,14 @@ $(document).ready(function(){
        $('.flecha-op').click(function(){
            $('.divoption').toggle();
        })
+       $('#top').click(function(){
+        // $('#top-login').toggle(); 
+         if($('body').css('margin-top') == '0px'){      
+              $('body').css('margin-top','170px')               
+         }else{
+              $('body').css('margin-top','0px')
+         }
+        });
     //diego
     $('#enviar').click(function(event){
         var titulo = $('#title').val();

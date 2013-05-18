@@ -60,11 +60,47 @@ html {
     width: 980px;
     height: 270px;
 }
-
+#top-login {
+    width: 100%;
+    background: #fff;
+    height: 149px;
+    position: fixed;
+    top: 0px;
+    z-index: -10;
+}
+.input-style {
+    width: 414px;
+    padding: 11px 4px;
+    border: 1px solid #999;
+    margin: 1px 0px 7px 0px;
+    font-size: 0.9em;
+}
+.field-item {
+    font-size: 0.8em;
+    color: #444;
+}
+.itemtoplog {
+    width: 443px;
+    height: 139px;
+    margin: 3px;
+    float: left;
+}
+.inner-toplogin {
+    width: 900px;
+    height: 149px;
+    margin: 0px auto;
+}
+.inner-toploginleft{
+    float: left; 
+    overflow: hidden;
+    padding: 10px 0px 0px 0px;
+}
 #top {          
     width: 100%;  
     height: 57px;  margin: 0px auto;  
-    position: fixed;  box-shadow: 0px -9px 8px 8px #000;  z-index: 7;  
+    position: fixed;    
+    box-shadow: 0px 0px 8px 0px #000;
+    z-index: 7;  
     background: url(/mooff/images/overtop.png), -webkit-linear-gradient(top,rgba(0, 164, 122, 1), rgba(0, 151, 113, 1));
 }
 .inner-top {
@@ -205,6 +241,7 @@ html {
     width: 950px;
     overflow: hidden;
     margin: 0px auto;  
+    background: #fff;
 }
 #body > .inner {
     width: 100%;

@@ -8,7 +8,7 @@
     require_once 'DAL/institucionDAL.php';
     date_default_timezone_set("Chile/Continental");
     //face
-        
+      include_once ('function/facebook-response.php');   
 
 ?>
 <!DOCTYPE html>
@@ -30,6 +30,28 @@
        
     </head>
     <body>
+       <div id="top-login">
+           <div class="inner-toplogin">
+               <div class="inner-toploginleft">
+                   <div class="itemtoplog">
+                       <div class="input-item">
+                           <div class="field-item">Email</div>
+                           <input id="mail" class="input-style" type="text" />
+                       </div>
+                       <div class="input-item">
+                            <div class="field-item">Password</div>
+                            <input id="pass" class="input-style" type="password" />
+                       </div>
+                   </div>
+                   <div class="itemtoplog">
+                       <a class="loginface-top" id="login-fb" href="<?php echo $loginUrl; ?>">
+                            <div id="loginbtn-fb"></div>
+                            <div class="txtfb">Ingresar con Facebook</div>
+                        </a>
+                   </div>
+               </div>
+           </div>
+       </div>
        
         <div id="coverall">
             <div class="innercal">
@@ -44,12 +66,13 @@
                 </div>
             </div>
         </div>
+        
         <div id="top">
             <div class="inner-top">
                 <div id="logmooff"></div>
                 <div class="part-right-top">
                     <?php 
-                    include_once ('function/facebook-response.php');
+                  
                     if(isset($user_profile) != null){//apreté el boton y se creo mi usuario
                         $_SESSION['user'] = $user_profile;
                         $usuario = new usuarioDAL();
@@ -57,10 +80,7 @@
                     }
                     
                     if(!isset($_SESSION['user'])){?>
-                        <a id="login-fb" href="<?php echo $loginUrl; ?>">
-                            <div id="loginbtn-fb"></div>
-                            <div class="txtfb">Ingresar con Facebook</div>
-                        </a>
+                        in
                     <?php }else{?>
                         <div id="partuser">
                             <div class="flecha-op"></div>
