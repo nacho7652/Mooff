@@ -13,8 +13,8 @@
                    $page_class = 'login-admin';
                    $page_description = "";
                    break;
-      case 'quienes': $page_title = 'Mooff';
-                   $page_site = 'quienes';
+      case 'inst': $page_title = 'Mooff';
+                   $page_site = 'institucion';
                    $page_class = 'home';
                    $page_description = "";
                    break;

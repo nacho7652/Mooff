@@ -132,7 +132,7 @@ figure { margin: 0; }
    Forms
    ========================================================================== */
 
-form { margin: 0; }
+form { margin-top: 73px; }
 fieldset { border: 0; margin: 0; padding: 0; }
 
 /* Indicate that 'label' will shift focus to the associated form element */

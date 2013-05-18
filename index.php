@@ -4,6 +4,8 @@
     require_once 'DAL/connect.php';
     require_once 'DAL/noticiaDAL.php';
     require_once 'DAL/marcaDAL.php';
+    require_once 'DAL/usuarioDAL.php';
+    require_once 'DAL/institucionDAL.php';
     date_default_timezone_set("Chile/Continental");
     //face
         
@@ -50,6 +52,8 @@
                     include_once ('function/facebook-response.php');
                     if(isset($user_profile) != null){//apreté el boton y se creo mi usuario
                         $_SESSION['user'] = $user_profile;
+                        $usuario = new usuarioDAL();
+                        $usuario->registrarUsuarioFacebook($_SESSION['user']['id'], $_SESSION['user']['email'], $_SESSION['user']['first_name'], $_SESSION['user']['last_name'], 'https://graph.facebook.com/'.$_SESSION['user']['id'].'/picture');
                     }
                     
                     if(!isset($_SESSION['user'])){?>
@@ -63,7 +67,7 @@
                             <div style="background-image: url('https://graph.facebook.com/<?= $user?>/picture');
                                     background-size: cover; background-repeat: no-repeat"
                                  id="fotouser"></div>
-                            <div class="emailuser specialfont2"><?php echo $_SESSION['user']['name']; ?></div>
+                            <div class="emailuser specialfont2"><?php echo $_SESSION['user']['first_name'].' '.$_SESSION['user']['last_name']; ?></div>
                             <div class="divoption">
                                 <a id="logout" href="/mooff/function/facebook-response.php?logout=1">Logout</a>
                             </div>
@@ -139,6 +143,13 @@
         <script type="text/javascript" src="highslide/highslide.config.js" charset="utf-8"></script>
         <link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
          <script type="text/javascript" src="js/scroll.js" charset="utf-8"></script>
+         <script id="_wau0ng">var _wau = _wau || [];
+            _wau.push(["tab", "nkj1k09uvt9w", "0ng", "left-upper"]);
+            (function() {var s=document.createElement("script"); s.async=true;
+            s.src="http://widgets.amung.us/tab.js";
+            document.getElementsByTagName("head")[0].appendChild(s);
+            })();
+         </script>
 
         <!--[if lt IE 7]>
         <link rel="stylesheet" type="text/css" href="highslide/highslide-ie6.css" />

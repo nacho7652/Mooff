@@ -1,5 +1,5 @@
 <?php
-$marca = new marcaDAL();
+$institucion = new institucionDAL();
 if(isset($_POST["send"]))
 {   
     $name = $_FILES['img']['name'];
@@ -10,10 +10,10 @@ if(isset($_POST["send"]))
         $partes = explode(".", $name);
         $ext = $partes[count($partes) - 1 ];
         $nom = $_POST['id'].$_POST['nom'].rand(1,10).'.'.$ext;
-        $url = 'marcas/'.$nom;
+        $url = 'instituciones/'.$nom;
         move_uploaded_file($tmp_name,$url);
         chmod($url, 777);
-        $marca->ingresarMarca($_POST['nom'],$url,$_POST['id']);   
+        $institucion->ingresarInstitucion($_POST['nom'],$url,$_POST['id']);   
     }
     else
     {
@@ -23,16 +23,16 @@ if(isset($_POST["send"]))
 }
 ?>
 
-<form id="marcas" action="#" method="post" enctype="multipart/form-data">
-    <input type="number" name="id" id="id" placeholder="Max id <?php echo $marca->maxID() ?>"/></br>
+<form id="instituciones" action="#" method="post" enctype="multipart/form-data">
+    <input type="number" name="id" id="id" placeholder="Max id <?php echo $institucion->maxID() ?>"/></br>
     <input type="text" name="nom" id="nom" placeholder="Nombre"/></br>
     <input type="file" name="img" id="img"/>
     <input type="submit" name="send" id="send" value="Guardar"/>
 </form>
 
 <?php
-    $marcas = $marca->verMarcas();
+    $marcas = $institucion->verInstitucion();
     foreach ($marcas as $key) {
-        echo $key->getNombre().'</br>'; 
+        echo ($key->getNombre().'</br>'); 
     }
 ?>

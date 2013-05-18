@@ -10,7 +10,7 @@ if(isset($_POST["enviar"]))
     {
         $partes = explode(".", $name);
         $ext = $partes[count($partes) - 1 ];
-        $nom = $_POST['id'].rand(1,10).'.'.$ext;
+        $nom = $_POST['id'].$_POST['title'].rand(1,10).'.'.$ext;
         $url = 'noticias/'.$nom;
         move_uploaded_file($tmp_name,$url);
         chmod($url, 777);

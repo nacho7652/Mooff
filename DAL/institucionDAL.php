@@ -1,12 +1,12 @@
 <?php
     require_once 'connect.php';
-    require_once 'Entidad/marca.php';
+    require_once 'Entidad/institucion.php';
 
-class marcaDAL {
+class institucionDAL {
     
-        public function ingresarMarca($nombre,$imagen,$id)
+        public function ingresarInstitucion($nombre,$imagen,$id)
         {
-            $query = "insert into marcas values ('$id','$nombre','$imagen')";
+            $query = "insert into instituciones values ('$id','$nombre','$imagen')";
             $connect = new connect();
             $connect->conectarse();
             $consulta = mysql_query($query);
@@ -16,7 +16,7 @@ class marcaDAL {
         
         public function maxID()
         {
-            $consulta = "select max(id_marcas) from marcas" ;
+            $consulta = "select max(id_institucion) from instituciones" ;
             $connect = new connect();
             $connect->conectarse();
             $result = mysql_query($consulta);
@@ -26,24 +26,24 @@ class marcaDAL {
             return $id;
         }
         
-        public function verMarcas()
+        public function verInstitucion()
         {
-            $marcas = new ArrayObject();
+            $instituciones = new ArrayObject();
             $connect = new connect();
             $connect->conectarse();
-            $result = mysql_query("select * from marcas");
+            $result = mysql_query("select * from instituciones");
             $connect->desconectarse();
             while($rs = mysql_fetch_array($result))
             {
-                $marca = new marca($rs[0],$rs[1],$rs[2]);
+                $institucion = new institucion($rs[0],$rs[1],$rs[2]);
 //                $marca->setId();
 //                $marca->setNombre();
 //                $marca->setImagen($rs[2]);
                 
-                $marcas->append($marca);
+                $instituciones->append($institucion);
                 
             }
-            return $marcas;
+            return $instituciones;
             
         }
 }
