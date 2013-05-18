@@ -63,7 +63,7 @@
                             <div style="background-image: url('https://graph.facebook.com/<?= $user?>/picture');
                                     background-size: cover; background-repeat: no-repeat"
                                  id="fotouser"></div>
-                            <div class="emailuser specialfont2"><?php echo $_SESSION['user']['username']; ?></div>
+                            <div class="emailuser specialfont2"><?php echo $_SESSION['user']['name']; ?></div>
                             <div class="divoption">
                                 <a id="logout" href="/mooff/function/facebook-response.php?logout=1">Logout</a>
                             </div>

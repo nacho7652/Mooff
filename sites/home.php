@@ -15,6 +15,8 @@ foreach ($noticias as $key) { ?>
         <div class="content-noticia"><?= 'El expresidente egipcio Hosni Mubarak ha negado hoy los cargos que se le imputan por corrupción...'//$key->getCuerpo() ?></div>
     </div>
         
-<?php    
+<?php 
     }
+    //print_r($_SESSION['user']);
+    //print_r($_SESSION['user']['id'])
 ?>
