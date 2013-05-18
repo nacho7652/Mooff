@@ -14,7 +14,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +26,6 @@
         <link rel="stylesheet" href="css/style-own.css">
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <meta charset="utf-8">
-       
     </head>
     <body>
        
@@ -120,6 +118,11 @@
                 </div>
                 
             </div>
+            <!-- SCM Music Player http://scmplayer.net -->
+            <script type="text/javascript" src="http://scmplayer.net/script.js" 
+            data-config="{'skin':'skins/black/skin.css','volume':100,'autoplay':true,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':'http://soundcloud.com/nubeswing/sets/varios'}" ></script>
+            <!-- SCM Music Player script end -->
+
         </footer>
          <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
          <script type="text/javascript" src="js/script.js"></script>

@@ -37,4 +37,4 @@ if(isset($_POST["enviar"]))
     foreach ($noticias as $key) {
         echo $key->getTitulo().'</br>'; 
     }
-?>
+?>    
