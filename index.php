@@ -140,7 +140,7 @@
             </div>
             <!-- SCM Music Player http://scmplayer.net -->
             <script type="text/javascript" src="http://scmplayer.net/script.js" 
-            data-config="{'skin':'skins/black/skin.css','volume':100,'autoplay':true,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':'http://soundcloud.com/nubeswing/sets/varios'}" ></script>
+            data-config="{'skin':'skins/black/skin.css','volume':50,'autoplay':true,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':false,'playlist':'http://soundcloud.com/nubeswing/sets/varios'}" ></script>
             <!-- SCM Music Player script end -->
 
         </footer>

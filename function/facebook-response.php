@@ -24,7 +24,7 @@ require 'facebook.php';
     // Login or logout url will be needed depending on current user state.
     $params = array(
             'scope' => 'email,user_birthday,user_location,publish_stream,offline_access',
-            'redirect_uri' => 'http://190.44.77.244/mooff/'
+            'redirect_uri' => 'http://localhost/mooff/'
     );
     $loginUrl = $facebook->getLoginUrl($params);
     //header("location:/mooff/home");
