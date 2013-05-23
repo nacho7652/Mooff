@@ -70,7 +70,6 @@
                 <div id="logmooff"></div>
                 <div class="part-right-top">
                     <?php 
-                  
                     if(isset($user_profile) != null){//apreté el boton y se creo mi usuario
                         $_SESSION['user'] = $user_profile;
                         $usuario = new usuarioDAL();
