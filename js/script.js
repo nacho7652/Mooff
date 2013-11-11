@@ -1,4 +1,5 @@
 $(document).ready(function(){  
+   
     //diego 
        $('#login-fb').mouseover(function(){
            $(this).css('background','url(/mooff/images/login-face-sprite.png) -82px -24px no-repeat');
@@ -12,14 +13,32 @@ $(document).ready(function(){
        $('.flecha-op').click(function(){
            $('.divoption').toggle();
        })
-       $('#top').click(function(){
-        // $('#top-login').toggle(); 
-         if($('body').css('margin-top') == '0px'){      
-              $('body').css('margin-top','170px')               
-         }else{
-              $('body').css('margin-top','0px')
-         }
-        });
+//       $('#top').click(function(){
+//        // $('#top-login').toggle(); 
+//         if($('body').css('margin-top') == '0px'){      
+//              $('body').css('margin-top','170px')               
+//         }else{
+//              $('body').css('margin-top','0px')
+//         }
+//        });
+        $('#playlistW').css('z-index','1000000');
+        $('#contentW').css('right','0');
+        
+        $('.item-noticia').mouseover(function(){
+            
+            $(this).find('.content-noticia').slideDown(200);
+        })
+        $('.item-noticia').mouseleave(function(){
+            $(this).find('.content-noticia').slideUp(200);
+        })
+        /*
+         * #playlistW {
+            z-index: 1000000 !important;
+        }
+        #contentW {
+            right: 0 !important;
+        }
+                 */
     //diego
     $('#enviar').click(function(event){
         var titulo = $('#title').val();

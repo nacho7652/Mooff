@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/style-own.css">
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
         <meta charset="utf-8">
        
     </head>
@@ -67,7 +68,7 @@
                             <div style="background-image: url('https://graph.facebook.com/<?= $user?>/picture');
                                     background-size: cover; background-repeat: no-repeat"
                                  id="fotouser"></div>
-                            <div class="emailuser specialfont2"><?php echo $_SESSION['user']['first_name'].' '.$_SESSION['user']['last_name']; ?></div>
+                            <a  href="/Mooff/perfil" class="emailuser specialfont2"><?php echo $_SESSION['user']['first_name'].' '.$_SESSION['user']['last_name']; ?></a>
                             <div class="divoption">
                                 <a id="logout" href="/mooff/function/facebook-response.php?logout=1">Logout</a>
                             </div>
@@ -81,9 +82,13 @@
                         <a href="/mooff/home" class="link firstlink">
                             <p class="inicio">Inicio</p>
                         </a>
-                        <a href="/mooff/quienes" class="link"><p>Quienes Somos</p></a>
-                        <a href="/mooff/servicios" class="link"><p>Servicios</p></a>
-                        <a href="/mooff/contacto" class="link"><p>Ubicación y contacto</p></a>
+                        <a href="http://www.nowsup.com" class="link large">
+                            <p>Potencia tu publicidad aquí con</p>  
+                            <div class=" logo"></div>
+                            <div class="logoper"></div>
+                        </a>
+                       
+                        <!--<a href="/mooff/contacto" class="link"><p>Ubicación y contacto</p></a>-->
                     </div>
                 </div>
             </div>
@@ -100,17 +105,17 @@
         <footer id="bottom">
             <div class="textbottom">
                 <div class="bottom-lf">
-                    <div class="tit-bt">
+<!--                    <div class="tit-bt">
                         Contáctanos
-                    </div>
+                    </div>-->
                     <div class="info-cont">
                        
                     </div>
                 </div>
                 <div class="bottom-rg">
-                    <div class="tit-bt">
+<!--                    <div class="tit-bt">
                         Servicios
-                    </div>
+                    </div>-->
                     <div class="info-cont">
                        
                     </div>

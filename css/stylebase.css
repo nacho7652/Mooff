@@ -5,6 +5,19 @@ html {
     overflow-y: scroll;
     overflow-x: auto;
 }
+.link.large{
+    width: 424px;
+    max-width: 500px !important;
+}
+.logo {
+    width: 109px !important;
+    height: 25px !important;
+    background: url('http://www.nowsup.com/images/logo-nowsup29.png')no-repeat;
+    margin-top: 6px !important;
+    background-size: cover;
+    float: left !important;
+    margin-left: 0px !important;
+}
 #logomech{
     background: url('/mechones/images/logo.png') no-repeat; 
     width: 200px;
@@ -198,23 +211,36 @@ html {
     font-size: 11px;  text-decoration: none;
     height: 37px;
 }
+.link.large p {
+    border: none;
+}
 .link p {
     border-right: 1px dashed rgb(216, 216, 216);
     padding: 0px 15px 0px 15px;
+    float: left;
 }
 #menu .part1 .link:hover {
     background: rgba(0, 151, 113, 1);
     color: #fff;
 }
 .home{
-    height: 500px;
-    padding-top: 76px;
+    padding-top: 17px;
     margin-top: 116px;
 }
+.input-item {
+float: right;
+}
+
 .tit-seccion {
     float: left;
-    width: 800px;
-    margin-bottom: 10px;
+    width: 929px;
+    margin: 0px auto 12px auto;
+    border-bottom: 2px dashed rgba(129, 129, 129, 0.32);
+    padding: 11px 0px 11px 0px;
+    color: #535353;
+    font-weight: bold;
+    font-size: 19px;
+    height: 33px;
 }
 .icon-seccion {
     float: left;
@@ -241,12 +267,11 @@ html {
     width: 950px;
     overflow: hidden;
     margin: 0px auto;  
-    background: #fff;
 }
 #body > .inner {
     width: 100%;
     margin: 0 auto;
-    min-height: 520px;
+    min-height: 700px;
     float: left;
     position: relative;
 }
@@ -256,7 +281,7 @@ html {
     float: right;
 }
 footer{
-    height: 229px;
+    height: 100px;
     width: 100%;  
     margin: 0px auto;  border-top: 0px solid rgb(21, 38, 53);    
     bottom: 0px;
@@ -267,4 +292,32 @@ footer .textbottom {
     color: #fff;
     font-size: 0.9em;
     width: 950px;
+}
+.content-tit {
+float: left;
+margin: 6px 0px 0px 0px;
+}
+.fecha.item-perfil {
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+    left: 2px;
+}
+.item-perfil {
+color: rgba(111, 111, 111, 0.93);
+font-size: 17px;
+margin-bottom: 8px;
+}
+.nombre {
+    font-size: 37px;
+    color: #555;
+}
+.logoper {
+    width: 40px;
+    height: 40px;
+    background: url('http://www.nowsup.com/images/logo-gps.png')no-repeat;
+    margin-top: 0px;
+    background-size: cover;
+    float: left;
+    margin-left: 5px;
 }
