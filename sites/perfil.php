@@ -4,15 +4,15 @@
 </div>
     
 <div class="colum">
-    <div style="background: url(/mooff/images/1.jpg); background-size:cover; background-repeat: no-repeat" 
+    <div style="background: url(/mooff/images/perfil.jpg); background-size:cover; background-repeat: no-repeat" 
              class="item-noticia porte2">
     </div>
 
     <div class="fecha item-perfil">Inscrito desde el 10 de Octubre de 2013</div>
 </div>
 <div class="colum2">
-    <div class="nombre">Juan José Rivarola Herrera</div>
-    <div class="item-perfil">E-mail: juanjose@ventas.cl</div>
+    <div class="nombre">Svenja Millhoff</div>
+    <div class="item-perfil">E-mail: Svenja@ventas.cl</div>
     <div class="item-perfil">Fono: +569 5893029</div>
     <div class="item-perfil">Dirección: Av. Vicuña Mackena #5050</div>
     <div class="item-perfil">Número de negocios inscritos <b>(6)</b></div>
